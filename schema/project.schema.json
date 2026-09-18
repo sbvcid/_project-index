@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sbvcid/_project-index/blob/main/schema/project.schema.json",
+  "title": "Project",
+  "type": "object",
+  "required": ["id", "identity", "human_defined", "machine_observed", "relationships"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+$"
+    },
+    "identity": {
+      "type": "object",
+      "required": ["name", "repository"],
+      "properties": {
+        "name": { "type": "string" },
+        "repository": { "type": "string", "pattern": "^[^/]+/[^/]+$" }
+      },
+      "additionalProperties": false
+    },
+    "human_defined": {
+      "type": "object",
+      "required": ["status", "role", "purpose"],
+      "properties": {
+        "status": { "type": "string" },
+        "role": { "type": "string" },
+        "purpose": { "type": "string" },
+        "importance": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "machine_observed": {
+      "type": "object",
+      "properties": {
+        "visibility": { "enum": ["public", "private"] },
+        "default_branch": { "type": "string" },
+        "last_commit": { "type": "string" },
+        "indexed_at": { "type": "string", "format": "date-time" },
+        "indexed_commit": { "type": "string" },
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "archived": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "depends_on": { "type": "array", "items": { "type": "string" } },
+        "used_by": { "type": "array", "items": { "type": "string" } },
+        "related_to": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
