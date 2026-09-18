@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sbvcid/_project-index/blob/main/schema/registry.schema.json",
+  "title": "Project Registry",
+  "type": "object",
+  "required": ["registry", "projects"],
+  "properties": {
+    "registry": {
+      "type": "object",
+      "required": ["name", "schema_version"],
+      "properties": {
+        "name": { "type": "string" },
+        "schema_version": { "type": "string" },
+        "owner": { "type": "string" },
+        "updated_at": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "projects": {
+      "type": "array",
+      "items": { "$ref": "project.schema.json" }
+    }
+  },
+  "additionalProperties": false
+}
