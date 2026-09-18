@@ -1,0 +1,170 @@
+{
+  "registry": {
+    "name": "_project-index",
+    "schema_version": "1.0.0",
+    "owner": "sbvcid",
+    "updated_at": "2026-09-18"
+  },
+  "projects": [
+    {
+      "id": "ai-agent-v3",
+      "identity": {
+        "name": "ai-agent-v3",
+        "repository": "sbvcid/ai-agent-v3"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "agent-platform",
+        "purpose": "Rust-based local autonomous AI agent."
+      },
+      "machine_observed": {
+        "visibility": "private",
+        "default_branch": "master"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "folder-intelligence",
+      "identity": {
+        "name": "folder-intelligence",
+        "repository": "sbvcid/folder-intelligence"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "filesystem-intelligence",
+        "purpose": "Low-resource filesystem evidence engine producing factual directory structure data."
+      },
+      "machine_observed": {
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "ibkr-test",
+      "identity": {
+        "name": "ibkr-test",
+        "repository": "sbvcid/ibkr-test"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "research-tool",
+        "purpose": "Personal IBKR document and data processing test project."
+      },
+      "machine_observed": {
+        "visibility": "private",
+        "default_branch": "master"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "Flatten-Folders-Tool",
+      "identity": {
+        "name": "Flatten-Folders-Tool",
+        "repository": "sbvcid/Flatten-Folders-Tool"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "utility",
+        "purpose": "Python tool for reducing nested folder depth."
+      },
+      "machine_observed": {
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "wav-to-mp3-converter",
+      "identity": {
+        "name": "wav-to-mp3-converter",
+        "repository": "sbvcid/wav-to-mp3-converter"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "utility",
+        "purpose": "Batch WAV-to-MP3 conversion utility."
+      },
+      "machine_observed": {
+        "visibility": "public",
+        "default_branch": "master"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "NonJPG2JPGConverter",
+      "identity": {
+        "name": "NonJPG2JPGConverter",
+        "repository": "sbvcid/NonJPG2JPGConverter"
+      },
+      "human_defined": {
+        "status": "active",
+        "role": "utility",
+        "purpose": "Recursive image conversion utility for converting supported image formats to JPEG."
+      },
+      "machine_observed": {
+        "visibility": "private",
+        "default_branch": "main"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "winget-pkgs",
+      "identity": {
+        "name": "winget-pkgs",
+        "repository": "sbvcid/winget-pkgs"
+      },
+      "human_defined": {
+        "status": "external",
+        "role": "package-manifests",
+        "purpose": "WinGet package manifest repository."
+      },
+      "machine_observed": {
+        "visibility": "public",
+        "default_branch": "master"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    },
+    {
+      "id": "hello",
+      "identity": {
+        "name": "hello",
+        "repository": "sbvcid/hello"
+      },
+      "human_defined": {
+        "status": "placeholder",
+        "role": "test",
+        "purpose": "Placeholder or test repository; no project documentation currently available."
+      },
+      "machine_observed": {
+        "visibility": "public",
+        "default_branch": "master"
+      },
+      "relationships": {
+        "depends_on": [],
+        "used_by": []
+      }
+    }
+  ]
+}
